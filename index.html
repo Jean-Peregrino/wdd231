@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Peregrino - WDD 231 - Web Frontend 1</title>
+    <meta name="description" content="WDD 231 - Web Frontend 1. Course assignment portal for Jean Peregrino. Course offered by Brigham Young University - BYU, through Pathway Worldwide. Assignment portal links to all learning activities and project.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="img-box">
+                <img src="images/user.webp" alt="Photo of Jean Peregrino. The author" title="Jean Peregrino" width="500" height="350" loading="lazy">
+            </div>
+            <h1>Jean Peregrino</h1>
+        </header>
+
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Chamber</a></li>
+                <li><a href="#" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/jean-carlo-peregrino-chuquiviguel-6322aa30b/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="course-work-box">
+            <div class="course-work-list">
+                <h3>Course Work</h3>
+                <ul>
+                    <li>Project 1</li>
+                    <li>Project 2</li>
+                    <li>Project 3</li>
+                </ul>
+            </div>
+            <section class="country-info-box">
+                <h3>Perú  </h3>
+                <div class="country-info">
+                    <div class="country-img-box">
+                        <img src="images/peru.webp" alt="Perú Flag" title="Perú" width="497" height="350" loading="lazy">
+                    </div>
+                </div>
+                <p>Perú Flag</p>
+            </section>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="buttons">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> .:|:. Jean Peregrino  .:|:. Cajamarca - Perú</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
