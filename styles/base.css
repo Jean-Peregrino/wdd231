@@ -150,6 +150,47 @@ main :where(section, h3) {
   gap: 2rem;
 }
 
+
+#courseList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#courseList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#courseList li:last-child {
+  border: none;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+
+#courseList .credits {
+  margin-left: auto;
+  color: #666;
+  font-style: italic;
+}
+
+#courseList li:last-child {
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 2px solid #ddd;
+}
+
+
+
+
 .country-info-box {
   display: grid;
   gap: 1rem;
@@ -160,14 +201,6 @@ main :where(section, h3) {
   text-align: center;
 }
 
-.course-work-list li {
-  color: #000;
-}
-
-.course-work-list {
-  background-color: #f0e9ef;
-  border-radius: 0.5rem;
-}
 
 .country-img-box img {
   width: 100%;

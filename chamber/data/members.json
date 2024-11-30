@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Autocentro Cajamarca",
+        "address": "Av. Vía de Evitamiento Norte N° 308 - Cajamarca",
+        "phone": "+51 076 - 366364 ",
+        "website": "https://www.autocentrocajamarca.pe",
+        "image": "../images/autocentro.webp",
+        "membershipLevel": 2,
+        "description": "Car Dealer"
+    },
+    {
+        "name": "CaxaGas",
+        "address": "Av San Martín de Porres 2248 - Cajamarca",
+        "phone": "+51 076 365353",
+        "website": "https://www.caxagas.pe/inicio.html",
+        "image": "../images/caxagas.webp",
+        "membershipLevel": 3,
+        "description": "Natural gas service"
+    },
+    {
+        "name": "Turismo Dias",
+        "address": "Av. Vía de Evitamiento Sur 1260 - Cajamarca",
+        "phone": "+51 948339133",
+        "website": "https://www.turismodias.com.pe",
+        "image": "../images/turismo-dias.webp",
+        "membershipLevel": 1,
+        "description": "Interprovincial transport service"
+    },
+    {
+        "name": "Ceyca",
+        "address": "Jr. Delfin Cerna Nº 457 – Cajamarca",
+        "phone": "+51 076 369175",
+        "website": "https://www.ceyca.com.pe",
+        "image": "../images/ceyca.webp",
+        "membershipLevel": 2,
+        "description": "Construction service, industrial maintenance"
+    },
+    {
+        "name": "Davy College",
+        "address": "Av. Hoyos Rubio 2684 - Cajamarca",
+        "phone": "+51 976225985",
+        "website": "https://www.davycollege.edu.pe",
+        "image": "../images/davy-college.webp",
+        "membershipLevel": 3,
+        "description": "Educational services"
+    },
+    {
+        "name": "Universidad Nacional de Cajamarca",
+        "address": "Av. Atahualpa 1050 - Cajamarca",
+        "phone": "+51 076 610000",
+        "website": "https://www.unc.edu.pe",
+        "image": "../images/unc.webp",
+        "membershipLevel": 3,
+        "description": "Educational services"
+    },
+    {
+        "name": "Gobierno Regional de Cajamarca",
+        "address": "Jr. Santa Teresa de Journet N° 351, Urbanización La Alameda Cajamarca",
+        "phone": "+51 076 600040",
+        "website": "https://www.regioncajamarca.gob.pe/",
+        "image": "../images/gobierno-regional.webp",
+        "membershipLevel": 3,
+        "description": "Regional Government"
+    }
+]
