@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cajamarca Chamber of Commerce, where we can find local companies from different business areas, thus boosting the local economy.">
+    <meta name="author" content="Jean PEregrino">
+
+    <meta property="og:title" content="Cajamarca Chamber of Commerce" >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/Jean-Peregrino/wdd231/blob/main/chamber/images/og-image.webp" >
+    <meta property="og:url" content="https://jean-peregrino.github.io/wdd231/chamber/directory.html" >
+    <meta property="og:description" content="Explore local businesses in our comprehensive Chamber of Commerce Directory." >
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cajamarca Chamber of Commerce" >
+    <meta name="twitter:description" content="Explore local businesses in our comprehensive Chamber of Commerce Directory." >
+    <meta name="twitter:image" content="https://github.com/Jean-Peregrino/wdd231/blob/main/chamber/images/twitter-image.webp" >
+
+    <title>Cajamarca Chamber of Commerce Business Directory</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-title">
+                <img src="images/logo.webp" alt="Chamber of Commerce Logo" class="logo">
+                <h1>Cajamarca<span>Chamber of Commerce</span></h1>
+            </div>
+            <div class="nav-controls">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/cajamarca-small.webp">
+                <source media="(max-width: 800px)" srcset="images/cajamarca-medium.webp">
+                <img src="images/og-image.webp" alt="Chamber Hero" class="hero-image">
+            </picture>
+            <a href="#" class="keynote-button">Keynote Tickets</a>
+        </div>
+    
+        <h1>Home</h1>
+    
+        <div class="info-grid">
+            <section class="events">
+                <h2>Events</h2>
+                <div class="events-content">
+                
+                    <!-- Events content here -->
+                </div>
+            </section>
+    
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="#" alt="current-weather Icon" class="weather-icon">
+                    <div class="weather-info">
+                        <p id="temperature" class="temperature"></p>
+                        <p id="condition" class="condition"></p>
+                        <div class="weather-details">
+                            <p id="high-low"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-content" class="forecast-content">
+                    <!-- Forecast data will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </div>
+    
+        <div class="business-grid" id="spotlightSection">            
+            <!-- Spotlight cards will be dynamically inserted here -->
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Cajamarca Chamber of Commerce</p>
+                <p>Irene Silva 231 Cajamarca - Perú</p>
+                <p>InfoCoC@refel.com</p>
+                <p>(+51) 076 604839</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube-icon.webp" alt="YouTube">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/x-icon.webp" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.webp" alt="LinkedIn">
+                </a>
+            </div>
+           <div class="footer-credits">
+                <p>&copy; <span id="year"></span> Cajamarca Chamber of Commerce</p>
+                <p>Jean Peregrino | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
