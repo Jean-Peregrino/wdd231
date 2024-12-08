@@ -1,6 +1,6 @@
 :root {
     --weather-background-color: #bbc7cc;
-        --button-background-color: #193247;
+    --button-background-color: #193247;
   }
   
   [data-theme='dark'] {
@@ -9,7 +9,7 @@
   
   main {
     display: grid;
-    gap: 0.5rem; 
+    gap: 0.5rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -24,7 +24,7 @@
     position: relative;
     width: 100%;
     height: 400px;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     overflow: hidden;
     border-radius: var(--card-radius);
   }
@@ -63,20 +63,18 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
   
   .events, .current-weather, .weather-forecast {
     background: var(--card-background);
-    backdrop-filter: blur(10px);
     border: 1px solid var(--card-border);
     border-radius: var(--card-radius);
-    overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
   }
   
-  .weather-forecast, .current-weather {
+  .current-weather, .weather-forecast {
     background: var(--weather-background-color);
   }
   
@@ -110,21 +108,12 @@
   
   .temperature {
     font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 0.5rem;
-  }
-  
-  .weather-details {
-    text-align: left;
+    margin: 0 0 0.5rem;
   }
   
   .weather-details p {
     margin: 0.25rem 0;
     font-size: 0.9rem;
-  }
-  
-  .forecast-day {
-    padding: 0.5rem;
   }
   
   .forecast-item {
@@ -148,7 +137,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(320px, 1fr));
     gap: 1rem;
-    margin: 1rem 0; 
+    margin: 1rem 0;
     max-width: 1200px;
     cursor: grab;
   }
@@ -164,8 +153,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    height: 220px;
-    width: 380px;
     transition: var(--transition);
   }
   
@@ -179,24 +166,13 @@
     border-bottom: 1px solid var(--card-border);
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
-    height: 60px;
   }
   
   .business-card h3 {
     margin: 0;
     font-size: 1.1rem;
     color: var(--text-color);
-    line-height: 1.2;
-    max-height: 2.4rem;
-    overflow: hidden;
-  }
-  
-  .card-content {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: .5rem;
-    align-items: start;
-    height: auto;
+    text-align: center;
   }
   
   .business-image {
@@ -204,76 +180,40 @@
     height: auto;
     background: var(--card-background);
     border: 1px solid var(--card-border);
-    object-fit: cover; 
-    border-radius: 50%; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto; /* Centrar la imagen */
   }
   
   .contact-info {
-    display: flex; 
-    flex-direction: column; 
-    gap: .25rem; 
-    width: auto; 
+    text-align: center;
   }
   
   .contact-info p {
-    margin: 0; 
-    font-size: .7rem; 
-    display: flex; 
-    gap: .5rem; 
-    align-items: center; 
-    height: auto; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
+    margin: 0;
+    font-size: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
   .contact-info span {
-    font-weight: bold; 
-    color: var(--text-color); 
-    min-width: auto; 
+    font-weight: bold;
+    color: var(--text-color);
   }
   
-  /* Accessibility Improvements */
-  a:focus-visible,
-  button:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-  }
-  
-  /* Animations */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  @media (max-width: 1024px) {
-    .business-grid {
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-      justify-content: center;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  
-    main {
-      padding: 0 0.5rem;
-    }
-  
-    .hero {
-      height: 200px;
-    }
-  
+  @media (max-width: 768px) {
     .info-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Configurar una sola columna */
+      gap: 1rem;
+    }
+  
+    .events, .current-weather, .weather-forecast {
+      width: 100%; /* Asegurar que ocupen toda la columna */
     }
   
     .business-grid {
@@ -283,81 +223,29 @@
   
     .business-card {
       width: 100%;
-      height: auto;
       padding: 0.75rem;
-    }
-  
-    .card-content {
-      grid-template-columns: 1fr;
+      text-align: center;
     }
   
     .business-image {
       width: 80px;
       height: 80px;
-      margin: 0 auto;
-    }
-  
-    .contact-info {
-      text-align: center;
-    }
-  
-    .keynote-button {
-      padding: 0.7rem 1.2rem;
-      font-size: 1rem;
+      margin: 0 auto; /* Centrar la imagen */
     }
   }
   
-  @media screen and (max-width: 480px) {
-    body {
-      font-size: 12px;
-    }
-  
-    main {
-      padding: 0 0.25rem;
-    }
-  
-    .hero {
-      height: 150px;
-    }
-  
-    .keynote-button {
-      bottom: 10px;
-      right: 10px;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
-  
+  @media (max-width: 480px) {
     .business-card {
       padding: 0.5rem;
     }
   
-     h2 {
+    .business-image {
+      width: 64px;
+      height: 64px;
+    }
+  
+    .business-card h3 {
       font-size: 1rem;
-      padding: 0.4rem 0.8rem;
-    }
-  
-    .weather-icon {
-      width: 48px;
-      height: 48px;
-    }
-  
-    .temperature {
-      font-size: 1.2rem;
-    }
-  
-    .forecast-item img {
-      width: 32px;
-      height: 32px;
     }
   }
   
-  @media (max-width: 320px) {
-    .business-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .business-card {
-      width: 100%;
-      height: auto;
-    }
-  }
