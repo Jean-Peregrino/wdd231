@@ -82,7 +82,7 @@
     transform: translateY(-5px);
   }
   
-  h2 {
+  h2, .gallery figcaption {
     background: var(--primary-color);
     color: var(--button-text);
     margin: 0;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the different local businesses in Cajamarca and get ready for an incredible experience!.">
+    <meta name="author" content="Jean Peregrino">
+
+    <meta property="og:title" content="Local Business | Cajamarca Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/Jean-Peregrino/wdd231/blob/main/chamber/images/og-image.webp">
+    <meta property="og:url" content="https://jean-peregrino.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Discover the different local businesses in Cajamarca and get ready for an incredible experience!.">
+   
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cajamarca Chamber of Commerce | Membership Application Form">
+    <meta name="twitter:description" content="Discover the different local businesses in Cajamarca and get ready for an incredible experience!.">
+    <meta name="twitter:image" content="https://github.com/Jean-Peregrino/wdd231/blob/main/chamber/images/twitter-image.webp">
+
+    <title>Local Business - Cajamarca Chamber of Commerce </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+    
+
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">    
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+   
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-title">
+                <img src="images/logo.webp" alt="Chamber of Commerce Logo" class="logo">
+                <h1>Cajamarca<span>Chamber of Commerce</span></h1>
+            </div>
+            <div class="nav-controls">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html" class="active">Join</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" aria-label="Toggle Theme">🌑</button>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <div class="visitor-message"></div>
+            <section class="info-box">
+                <h2>Cajamarca Demographics</h2>
+                <p>Population: 245,137 (2020 census)</p>
+                <p>Area: 20 km²</p>
+                <p>Language: Spanish, English</p>
+            </section>
+            <section class="info-box">
+                <h2>Upcoming Events</h2>
+                <p>Cajamarca Anniversary - January 03, 2025</p>
+                <p>Carnaval de Cajamarca - March 1 - 5, 2025</p>
+            </section>
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="#" alt="current-weather Icon" class="weather-icon">
+                    <div class="weather-info">
+                        <p id="temperature" class="temperature"></p>
+                        <p id="condition" class="condition"></p>
+                        <div class="weather-details">
+                            <p id="high-low"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="prev">&#10094;</span>
+                    <span>June 24, 2024</span>
+                    <span class="next">&#10095;</span>
+                </div>
+                <table>
+                    <tr>
+                        <th>Su</th><th>Mo</th><th>Tu</th>
+                        <th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                    </tr>
+                    <!-- Calendar dates would be populated by JS -->
+                </table>
+            </div>
+        </aside>
+
+        <section class="explore">
+            <h2>Explore Cajamarca</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/bañosdelinca.webp" alt="Baños del Inca Tourist Center" class="lazy-image" width="600" height="400">
+                    <figcaption>Baños del Inca Tourist Center</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/castillo-yanamarca.webp" alt="Yanamarca Castle" class="lazy-image" width="600" height="400">
+                    <figcaption>Yanamarca Castle</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/frailones.webp" alt="Frailones" class="lazy-image" width="600" height="400">
+                    <figcaption>Frailones</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/granja-porcon.webp" alt="Granja Porcon" class="lazy-image" width="600" height="400">
+                    <figcaption>Granja Porcon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/otuzco.webp" alt="Ventanillas de Otuzco" class="lazy-image" width="600" height="400">
+                    <figcaption>Ventanillas de Otuzco</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/carnavales-cajamarca.webp" alt="Carnaval Cajamarca" class="lazy-image" width="600" height="400">
+                    <figcaption>Carnaval Cajamarca</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Cajamarca Chamber of Commerce</p>
+                <p>Irene Silva 231 Cajamarca - Perú</p>
+                <p>InfoCoC@refel.com</p>
+                <p>(+51) 076 604839</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube-icon.webp" alt="YouTube">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/x-icon.webp" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.webp" alt="LinkedIn">
+                </a>
+            </div>
+           <div class="footer-credits">
+                <p>&copy; <span id="year"></span> Cajamarca Chamber of Commerce</p>
+                <p>Jean Peregrino | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
